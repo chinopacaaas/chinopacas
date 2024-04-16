@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Bitacora de Parcial 2</title>
+    
+</head>
+
+<body>
+<main>
+
+    <header></header>
+    <nav>
+        <ul>
+            <li><a href="#Position">Propiedad Position</a></li>
+            <li><a href="#Display">Propiedad Display</a></li>
+            <li><a href="#Animation">Animación</a></li>
+            <li><a href="#form">Formularios</a></li>
+            <li><a href="#Referenciado">Referenciado</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <h2>Ideas Principales</h2>
+        <div class="txto">
+            <h3 id="Position">Propiedad Position</h3>
+            <p>
+                Especifica el tipo de método de posicionamiento, hay cinco valores de propiedad; top, bottom, left, rigth y z-index. <br>
+                <strong>Static:</strong> los elementos en HTML tienen por defecto esta propiedad, estos no se ven afectados por las propiedades antes
+                mencionadas, siempre se posiciona con el flujo normal de la página. <br>
+                <strong>Relative:</strong> el elemento se desplaza respecto a su posición establecida mediante el posicionamiento original, se controlan
+                mediante top, bottom, left y rigth. Los demás elementos no se desplazan a ocupar el lugar que deja. <br>
+                <strong>Absolute:</strong> se emplea para establecer de forma exacta el posicionamiento del elemento, cuando un elemento se posiciona de
+                forma absoluta los demás elementos se ven afectados y estos ocuparan el posicionamiento que dejo el elemento. <br>
+                <strong>Fixed:</strong> está ubicado con relación a la ventana gráfica. Este elemento no se desplaza cuando la página lo hace y no deja
+                espacio en la página como normalmente lo haría, este se establece con respecto de la ventana gráfica. <br>
+                <strong>Sticky:</strong> se posiciona con respecto al desplazamiento del usuario y esta alterna entre relativo o fijo, se posiciona de
+                manera relativa hasta que encuentra una posición de desplazamiento dada, pasa a una posición fija.
+
+            </p>
+        </div>
+    </section>
+    
+    <section id="derecha">
+        <h2>Notas</h2>
+        <div class="img">
+            <a href="img/position.png">
+                <img src="img/position.png" alt="Propiedad Position" title="Propiedad Position">
+            </a>
+        </div>
+        <div class="txt">
+            <p>
+                Es importante recordar que los valores de propiedad, dependiendo de la propiedad, hacen o no efecto sobre los elementos. 
+                Solo los elementos relative son manipulados por los valores de propiedad. 
+            </p>
+        </div>
+    </section>
+    
+    <footer>
+        <h2>Resumen</h2>
+        <div class="texto">
+            <p>
+                Especifica el metodo de posicionamiento del elemento, variando en funcion de la propiedad. Los elementos llevan por default 
+                la propiedad static y esta hace que no tengan efecto los valores de propiedad, por otro lado, la propiedad raltive, es controloda 
+                mediante los valores de propiedad. Las démas propiedades dan diferentes efectos sobre los elementos, se pueden utilizar en función a 
+                las necesidades del sitio. 
+            </p>
+        </div>
+    
+    </footer>
+</main>
+<!------------------------------------------------------------------------------------------------------------->
+
+<main>
+
+    <header></header>
+    <nav>
+        <ul>
+            <li><a href="#Position">Propiedad Position</a></li>
+            <li><a href="#Display">Propiedad Display</a></li>
+            <li><a href="#Animation">Animación</a></li>
+            <li><a href="#form">Formularios</a></li>
+            <li><a href="#Referenciado">Referenciado</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <h2>Ideas Principales</h2>
+        <div class="txto">
+            <h3 id="Display">Propiedad Display</h3>
+            <p>
+                Cada elemento tiene un valor de visualización pre determinado según el tipo de elemento que sea. <br>
+                <strong>Display: block;</strong> <br>
+                Este siempre comienza en una nueva línea y ocupa todo el ancho disponible; elementos div, header, nav, section, footer,
+                etc, son ejemplos de elementos con display: block; <br>
+                <strong>Display: inline;</strong> <br>
+                Este no comienza en una nueva línea y ocupa el tamaño necesario. Los elementos con display inline como los img, solo
+                ocupan el tamaño de la imagen, mientras que figure al tener la propiedad block ocupan un espacio extra. <br>
+                <strong>Display: inline-block;</strong> <br>
+                No agrega un salto de línea, por lo que puede alinearse con otros elementos. Permite establecer el ancho y alto en la
+                figura. Además se respetan margins, paddings. <br>
+                <strong>Display: none;</strong> <br>
+                Se usa comúnmente con JavaScript para ocultar elementos cuando el usuario realiza alguna opción como pulsar un botón.
+                El resultado es que el elemento desaparece por completo de la página y no ocupa sitio. <br>
+                <strong>Display: table;</strong> <br>
+                Tiene una serie de displays diferentes para cada elemento de la tabla.
+
+            </p>
+        </div>
+    </section>
+    
+    <section id="derecha">
+        <h2>Notas</h2>
+        <div class="img">
+            <a href="img/display.png">
+                <img src="img/display.png" alt="Propiedad Display" title="Display">
+            </a>
+        </div>
+        <div class="txt">
+            <p>
+                La propiedad display varia el valor de visualización de los elementos con dicha propiedad. Cada elemento en html cuenta con 
+                una propiedad de visualización predeterminada.  
+            </p>
+        </div>
+    </section>
+    
+    <footer>
+        <h2>Resumen</h2>
+        <div class="texto">
+            <p>
+                Los elementos en HTML tienen un valor de visualización predeterminado segun el tipo de elemento que sea. La propiedad display, nos permite modificar como se relacionan los elementos 
+                en funcion de la propiedad. Los elementos div, header, nav, section, siempre comienzan en una nueva linea y ocupa todo el ancho
+                disponible, la propiedad es display: block; La propiedad display: inline; ocupa solo el tamaño necesario. Las distintas propiedades
+                tiene un efecto diferente en su valor de visualización. 
+            </p>
+        </div>
+    
+    </footer>
+</main>
+<!-------------------------------------------------------------------------------------------------------------->
+
+<main>
+
+    <header></header>
+    <nav>
+        <ul>
+            <li><a href="#Position">Propiedad Position</a></li>
+            <li><a href="#Display">Propiedad Display</a></li>
+            <li><a href="#Animation">Animación</a></li>
+            <li><a href="#form">Formularios</a></li>
+            <li><a href="#Referenciado">Referenciado</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <h2>Ideas Principales</h2>
+        <div class="txto">
+            <h3 id="Animation">Animación</h3>
+     <p>
+       Css3 permite animar la mayoría de los elementos. Para que una animación funcione se debe vincular a un elemento. <br>
+       Div{ <br>
+       <strong>Animation-name: anim1;</strong> <br>
+       } <br>
+       <strong>
+          @keyframes anim1 <br>
+          0%{width: 100px; <br>
+          } <br>
+          50% width: 500px; <br>
+      
+          100%{width: 500px; <br>
+          } <br>
+       </strong>
+       <strong>Animation-duration:</strong> especifica cuanto tiempo deberá transcurrir entre animaciones. Si no se especifica,
+       la animación
+       quedara nula pues el tiempo predeterminado es de 0 segundos. <br>
+       <strong>Animation-timing-function:</strong> especifica la curva de velocidad de la animación: <br>
+       <strong>• Linear:</strong> especifica una animación con la misma velocidad- <br>
+       <strong>• Ease:</strong> especifica una animación con inicio lento, luego rápido, y termina lento. <br>
+       <strong>• Ease-in:</strong> inicia lento y termina rápido <br>
+       <strong>• Ease-out:</strong> con un final lento <br> <br>
+
+      <strong>Aniation-direction:</strong> especifica si una animación debe reproducirse hacia adelante, hacia atrás o en
+      ciclos alternos. No
+      funciona si no se expresa animation-iteration: que especifica el número de veces que debe reproducirse la animación.
+      <br>
+      <strong>
+          • Normal <br>
+          • Reverse <br>
+          • Alternate-reverse <br>
+      </strong>
+      <strong>Animation-delay:</strong> especifica el tiempo antes de ejecutar la animación. Toma de referencia el tiempo en
+      el que cargo la
+      página, si se especifica unidades negativas, estas se ejecutan antes de que la página cargue. <br>
+      <strong>Animation-fill-mode:</strong> especifica un estilo para el elemento cuando esta no se esta reproduciendo (antes,
+      después y ambas
+      ocasiones) <br>
+      <strong>• None:</strong> valor predeterminado. No aplicara ningún estilo. <br>
+      <strong>• Forwards:</strong> retendrá los valores del estilo del ultimo fotograma clave (depende de animation-directio y
+      iteration-) <br>
+      <strong>• Backwards:</strong> obtendrá los valores de estilo establecidos en el primer fotograma, esto mientras la
+      animación aún no se
+      reproduce, una vez terminada la animación termina en el primer fotograma <br>
+      <strong>• Both:</strong> no trabaja con ninguno de los valores ya sea iniciales o los finales. <br>
+      Animation: propiedad rápida para configurar todas las propiedades de la animación: Nombre y duración son dos propiedades
+      obligatorias <br> <br>
+
+      <strong>Animaciones con steps</strong> <br>
+      La función steps() nos permite dividir una animación en segmentos en lugar de una transición a otra.
+
+     </p>
+        </div>
+    </section>
+    
+    <section id="derecha">
+        <h2>Notas</h2>
+        <div class="img">
+            <a href="img/animacion.png">
+                <img src="img/animacion.png" alt="Animacion CSS3" title="Animacion">
+            </a>
+        </div>
+        <div class="txt">
+            <p>
+                Si no se especifica el tiempo de la animación mediante animation-duration, la animación se anulará pues el valor de tiempo por default
+                de las animaciones es de 0 segundos. Mediante keyframes se modifica el valor en porcentaje de la animación. 
+            </p>
+        </div>
+    </section>
+    
+    <footer>
+        <h2>Resumen</h2>
+        <div class="texto">
+            <p>
+                CSS3 permite animar la mayoria de elementos utilizados. Para que las animaciones funciones deben estar vinculadas 
+                al elemento en cuestion. Por medio de los keyframes podemos darle distintos niveles de animacion, otorgandoles porcentaje
+                en funcion al tiempo de la animación. Si no se especifica el tiempo de duración de la animación por medio de animation-duration 
+                la animación quedara nula, pues el valor de terminado es de 0 segundos. <br>
+                En funcion de la propiedad de animacion este toma distintos tiempos, con animation-timing-function se especifica la curva de 
+                velocidad de la animación. Y así direction, reverse, delay, fill-mode, modifican cada uno en su función desde el tiempo de carga antes y despues
+                de reproducir la animación, hasta el estilo inicial y final de esta. <br>
+                La animación con steps permite dividir las animaciones en segmentos de fotogramas.  
+            </p>
+        </div>
+    
+    </footer>
+</main>
+<!------------------------------------------------------------------------------------------------------------------------->
+
+<main>
+
+    <header></header>
+    <nav>
+        <ul>
+            <li><a href="#Position">Propiedad Position</a></li>
+            <li><a href="#Display">Propiedad Display</a></li>
+            <li><a href="#Animation">Animación</a></li>
+            <li><a href="#form">Formularios</a></li>
+            <li><a href="#Referenciado">Referenciado</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <h2>Ideas Principales</h2>
+        <div class="txto">
+            <h3 id="form">Formularios</h3>
+            <p>
+                <strong>Elemento form</strong> <br>
+                Elemento define un formulario que se utiliza para recopilara la información ingresada para el usuario, tiene como hijos
+                a los elementos input. <br>
+                <strong>Input</strong>
+                La etiqueta input no tiene cierre <br>
+                El más importante del formulario, puede ser mostrado con el atributo type. Con el atributo label se le asigna el nombre
+                y al momento de dar click se selecciona toda la sección. <br>
+                El atributo textarea a diferencia de input tiene un límite en caracteres por renglón, así como un límite en los
+                renglones. <br>
+                
+                <strong>Type</strong> <br> 
+                
+                <strong>Type pasword</strong> <br>
+                Los elementos ingresados son cambiados por puntos negros. <br>
+                <strong>Botón reset</strong> <br>
+                Elimina los elementos de ingresados en los elementos input anteriores. Este debe verse como un botón deshabilitado. <br>
+                <strong>Botón de radio</strong> <br>
+                Crea un botón de radio, contiene dos cualidades importantes para la web. Este permite seleccionar una opción, estos
+                deberán tener el mismo “name”. El atributo cheked deja seleccionado por default al cargar la pagina el botón de
+                selección. <br>
+                <strong>Checkboxes</strong> <br>
+                Son cuadrados y existe la posibilidad de seleccionar varios elementos, <br>
+                <strong>Botón de entrada</strong> <br>
+                ejecuta un archivo <br>
+                <strong>Campo de fecha</strong> <br>
+                input type= date. Es usado para campos que contienen fechas. <br>
+                <strong>Campo para teléfono</strong> <br>
+                input type= tel. usado para campos que requieren un número telefónico. Se puede modificar el formato para escribir con
+                el placeholder. Required, hace que el campo sea obligatorio y no puede enviar la información. 
+
+            </p>
+        </div>
+    </section>
+    
+    <section id="derecha">
+        <h2>Notas</h2>
+        <div class="img">
+            <a href="img/formulario.png">
+                <img src="img/formulario.png" alt="Formularios" title="Formulario">
+            </a>
+        </div>
+        <div class="txt">
+            <p>
+                <strong>La etiqueta input no tiene cierre</strong>. Los elementos form recopilan información ingresada por el usuario, para hacer uso de este, 
+                debe estar vinculado a un archivo de php que nos proporciono el profe. 
+            </p>
+        </div>
+    </section>
+    
+    <footer>
+        <h2>Resumen</h2>
+        <div class="texto">
+            <p>
+                Los elementos form tiene como hijos a los elementos input, que son el elemento mas importante del formulario y se muestra mediante 
+                el atributo type. El atributo type tiene distintos elementos que van en funcion a su propiedad, checkboxes, boton de entrada, campo de fecha, 
+                boton de radio, boton reset, etc. 
+            </p>
+        </div>
+    
+    </footer>
+</main>
+<!---------------------------------------------------------------------------------------------------------------------------------------------->
+
+<main>
+
+    <header></header>
+    <nav>
+        <ul>
+            <li><a href="#Position">Propiedad Position</a></li>
+            <li><a href="#Display">Propiedad Display</a></li>
+            <li><a href="#Animation">Animación</a></li>
+            <li><a href="#form">Formularios</a></li>
+            <li><a href="#Referenciado">Referenciado</a></li>
+        </ul>
+    </nav>
+    
+    <section>
+        <h2>Ideas Principales</h2>
+        <div class="txto">
+            <h3 id="Referenciado">Referenciado</h3>
+            <p>
+                Con atributos id se utiliza el #, cuando es un elemento único, y el carácter, para
+                elementos de tipo class. <br>
+                <strong>Referenciado con pseudoclases</strong> <br>
+                css3 incorpora nuevas pseudo clases que hacen la selección más específica, sin importar cuanto conocemos sobre sus
+                atributos. La pseudo clase es usada agregando dos puntos luego de la referencia y antes de su nombre. <br>
+                <strong>§ #referencia: ntch-child( )</strong> <br>
+                Esta nos permite manipular un hijo específico. Los elementos referenciados por nth-child seleccionan todos los hijos
+                relacionados, si no se especifica el elemento al momento de referenciarlo.
+                Las palabras clave <strong>odd even</strong>. Nos permiten manipular y alternar todos los elementos referenciados por nth-child sin
+                necesidad de crear nth-child para cada elemento. <br>
+                <strong>§ #referencia: ntch-child(oven)</strong> <br>
+                Existen otras pseudo clases relacionadas con esta última, la referencia first-child solo afecta al primer hijo,
+                last-child afecta al último hijo, only-child solo afecta a un elemento cunado es hijo único.
+                Otra pseudo clase importante es <strong>not ( )</strong> los elementos referenciados con este hacen efecto sobre todos los elementos
+                excepto con los elementos refrenciados entre los paréntesis <br>
+                <strong>§ :not(.texto)</strong> <br>
+                <strong>Selectores de tributo</strong> <br>
+                Agregados recientemente estos nos permiten manipular el atributo dentro del elemento: <br>
+                p[name^=”mi”]{… } donde los caracteres ^= , son las primeras dos letras del nombre del atributo referenciado. <br>
+                La regla con el selector $=, afecta a los atributos cuyo nombre culmina con las letras referenciadas. <br>
+                La regla con el selector *=, afecta a los atributos referenciados en el orden en que son escritos <br>
+                Selectores de relación <br>
+                Estos selectores utilizan los caracteres >, +, ¬ para especificar la relación entre los elementos. > Selecciona todos
+                los elementos hijo de un elemento previamente referenciado div > p {… }. <br>
+                El selector + selecciona los elementos que estén inmediatamente después de uno antes referenciado: nav + p {… }. <br>
+                El selector con ¬ selecciona los elementos que son hermanos y que se encuentre después de este: p ¬ nav {… }. 
+
+            </p>
+        </div>
+    </section>
+    
+    <section id="derecha">
+        <h2>Notas</h2>
+        <div class="img">
+            <a href="img/referenciado.png">
+                <img src="img/referenciado.png" alt="Referenciado en css" title="Referenciado">
+            </a>
+        </div>
+        <div class="txt">
+            <p>
+                Para referenciar con pseudoclases, es necesario referenciar al elemento que se quiera modificar, seguido de dos puntos y 
+                el atributo. Con el atributo ntch-child es posible modificar los hijos directos del elemento referenciado.
+            </p>
+        </div>
+    </section>
+    
+    <footer>
+        <h2>Resumen</h2>
+        <div class="texto">
+            <p>
+                CSS3 incorpora distintos selectores de atributo y pseudoclases, que permiten modificar especificamente el atributo del Elemento
+                referenciado. Los selectores de relación utilizan caracteres especiales para establecer la relación que tiene el elment con otro. 
+            </p>
+        </div>
+    
+    </footer>
+</main>
+
+
+</body>
+
+</html>
